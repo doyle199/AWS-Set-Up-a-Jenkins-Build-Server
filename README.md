@@ -105,6 +105,30 @@ Click on the Available tab. Search for Amazon EC2 plugin. Check the box next to 
 
 ![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/install_3.png)
 
+After installation, click go back to the top page.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/Success_1.png)
+
+Click on manage Jenkins then Configure System.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/config_system.png)
+
+Click on the cloud configuration link at the bottom.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/Cloud_page.png)
+
+Click add a new cloud then Amazon EC2. Add Amazon EC2 Credentials.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/Jenkins_info.png)
+
+Fill out the rest of the information and click save.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/save_2.png)
+
+You are now ready to use EC2 instances as Jenkins build slaves. 
+
+
+
 
 
 
