@@ -51,6 +51,8 @@ udpage the instance with the command "sudo yum update"
 
 ![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/update_2.png)
 
+to add the Jenkins repo, run the following script: "sudo wget -O/etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo"
 
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/jenkins_repo.png)
 
 
