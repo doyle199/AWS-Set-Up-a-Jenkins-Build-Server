@@ -71,3 +71,40 @@ Transfer the java file from your computer to the tmp folder.
 
 ![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/transfer.png)
 
+To install the new java version run the following command "sudo rpm -ivh /tmp/jdk-8u261-linux-x64.rpm"
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/install_2.png)
+
+Use the following command to check the java installation "ls -ltr /usr/java"
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/check_1.png)
+
+Then start Jenkins again with the following command "sudo service jenkins start"
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/OK.png)
+
+To configure Jenkins, connect via a browser using your instance DNS to http://<your_server_public_DNS>:8080.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/Unlock.png)
+
+To get the Administratior password run the following command "sudo cat /var/lib/jenkins/secrets/initialAdminPassword" and log in.
+
+Click install suggested plugins and create an Admin user.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/create_first_admin_user.png)
+
+Go to the next page and click save and finish.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/instance_config.png)
+
+Click on start using Jenkins. Click on manage Jenkins then Manage plugins in the left menu.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/Manage_Jenkins.png)
+
+Click on the Available tab. Search for Amazon EC2 plugin. Check the box next to it. Click on install without restart.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/install_3.png)
+
+
+
+
