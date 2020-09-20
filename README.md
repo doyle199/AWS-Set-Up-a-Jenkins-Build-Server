@@ -51,8 +51,23 @@ udpage the instance with the command "sudo yum update"
 
 ![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/update_2.png)
 
-to add the Jenkins repo, run the following script: "sudo wget -O/etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo"
+to add the Jenkins repo, run the following command: "sudo wget -O/etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo"
 
 ![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/jenkins_repo.png)
 
+Import a key file from Jenkins-CI to enable installation from the package. Run the following command "sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key"
+
+Install Jenkins with the following command "sudo yum install jenkins -y"
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/Jenkins_install.png)
+
+Start Jenkins as a Service with the following command "sudo service jenkins start". If Java needs to be upgraded to version 8 or 11 go to the oracle website and download it. Then transfer the file from your workstation to the instance. 
+
+Here is an example of using SFTP with Filezilla. Go into settings and check on SFTP, click on add key and select your EC2 key. Click on the sever icon in the top right and enter SFTP for protocol. Put the instance Public DNS in the Host. Use ec2-user for user and click connect
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/FZ.png)
+
+Transfer the java file from your computer to the tmp folder.
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/transfer.png)
 
