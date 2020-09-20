@@ -45,6 +45,12 @@ Connect to the instance using an SSH client. Click on the instance then click on
 
 ![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/Connect_to_your_instance_mac.png)
 
+udpage the instance with the command "sudo yum update"
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/update_1.png)
+
+![alt text](https://github.com/doyle199/AWS-Set-Up-a-Jenkins-Build-Server/blob/master/update_2.png)
+
 
 
 
